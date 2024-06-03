@@ -1,0 +1,69 @@
+.photos-portfolio {
+	background-color: white;
+  }
+  
+  .photos-portfolio h2 {
+	color: #242424;
+	margin-bottom: 80px;
+  }
+  
+  .grid-paysages img,
+  .grid-portraits img {
+	width: 100%;
+	height: 100%;
+	/* Même si vous ne connaissez pas cette propriété, vous en aurez besoin pour permettre aux images de respecter les dimensions de la grid CSS */
+	object-fit: cover;
+  }
+  .grid-paysages,
+  .grid-portraits
+  {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: 5fr 5fr 5fr;
+  }
+  .grid-paysages
+  {
+	grid-template-rows: 300px 300px 300px ;
+	
+  }
+  .grid-portraits
+  {
+	grid-template-rows: 300px 300px;
+
+  }
+  .photos-portfolio a:hover
+  {
+	opacity: 0.7;
+  }
+  
+  .lien-photo {
+	position: relative;
+  }
+  .photo-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: none;
+  }
+  .lien-photo:hover .photo-hover {
+	display: flex;
+  }
+  @media screen and (max-width: 996px) {
+    .grid-paysages {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .grid-portraits {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }

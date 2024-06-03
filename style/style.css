@@ -1,0 +1,290 @@
+/* 
+Soulignez du texte avec la propriété CSS text-decoration
+
+	La propriété CSS text-decoration permet, entre autres, de souligner le texte, mais pas seulement. Voici quelques-unes des différentes valeurs qu'elle peut prendre :
+
+    underline: souligné ;
+
+    line-through: barré ;
+
+    none: normal (par défaut, sauf dans le cas des liens).
+
+Alignez du texte avec la propriété CSS  text-align
+
+	La propriété CSS text-align permet d'aligner du texte selon la valeur qu'on lui donne :
+
+    left : le texte sera aligné à gauche (c'est le réglage par défaut) ;
+
+    center : le texte sera centré ;
+
+    right : le texte sera aligné à droite ;
+
+	justify  : le texte sera “justifié”.
+
+Ajoutez une image de fond avec  background-image
+
+	Modifiez le comportement d'une image de fond
+
+	Pour changer le comportement d'une image de fond, il existe plusieurs propriétés CSS :
+
+    La propriété CSS background-attachment associée à la valeur  fixed  permet de rendre l'image 
+		de fond fixe lorsqu'on déroule la page web : background-attachment: fixed;
+
+    La propriété CSS background-size associée à la valeur  cover  permet de redimensionner l'image 
+		afin qu'elle s'adapte à la taille de l'élément qui la contient (elle garde ses proportions, 
+		en rognant la largeur ou la hauteur en fonction de la taille de l'élément qui la contient) : 
+		background-size: cover;
+
+    La propriété CSS background-position associée aux valeurs  top ,  bottom ,  left ,  center  ou  
+		right  permet d'indiquer où doit se trouver l'image de fond, par exemple : 
+		 background-position: top right;
+
+Créez des dégradés avec  linear-gradient
+
+	Pour créer un dégradé, on a besoin de la propriété CSS  background  :
+
+	background: linear-gradient(90deg, #8360c3, #2ebf91);
+
+	Si je devais lire en français cette ligne de CSS, voici ce que ça donnerait :
+
+	"J'applique un dégradé linéaire, à 90 degrés, en partant de la couleur  #8360c3  
+		pour arriver à la couleur  #2ebf91.
+
+Ajoutez une ombre portée avec la propriété CSS  box-shadow		
+
+	Les valeurs fonctionnent exactement de la même façon que  box-shadow :
+
+    décalage horizontal,
+
+    décalage vertical,
+
+    adoucissement,
+
+    et couleur.
+
+	text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+
+Les superclasses css : pour faire des modifications dynamiques
+	:hover pour quand on survole
+	:active pour quand on clique dessus
+	:focus lorque l'élément est selectionné
+	:visited pour savoir si on a déja cliqué sur un lien par exemple
+
+Alignez les éléments d'un conteneur avec  display: flex;
+	Il suffit d'une seule propriété CSS, et tout change ! Cette propriété, 
+	c'est flex  et on l'applique au conteneur : alors les blocs se placent par défaut côte à côte.
+	Magique !
+
+Donnez leur une direction avec la propriété  flex-direction
+
+	row  : organisés sur une ligne (par défaut) ;
+    column  : organisés sur une colonne ;
+    row-reverse  : organisés sur une ligne, mais en ordre inversé ;
+    column-reverse  : organisés sur une colonne, mais en ordre inversé.
+
+Retournez à la ligne avec la propriété  flex-wrap
+
+	nowrap  : pas de retour à la ligne (par défaut) ;
+    wrap  : les éléments vont à la ligne lorsqu'il n'y a plus la place ;
+    wrap-reverse  : les éléments vont à la ligne, lorsqu'il n'y a plus la place, en sens inverse.
+
+Alignez sur l'axe principal avec la propriété  justify-content
+
+	flex-start: alignés au début (par défaut) ;
+	flex-end: alignés à la fin ;
+	center: alignés au centre ;
+	space-between: les éléments sont étirés sur tout l'axe (il y a de l'espace entre eux) ;
+	space-around: idem, les éléments sont étirés sur tout l'axe, mais ils laissent aussi de 
+		l'espace sur les extrémités
+
+Alignez sur l'axe secondaire avec  align-items
+
+	stretch: les éléments sont étirés sur tout l'axe (valeur par défaut) ;
+    flex-start: alignés au début ;
+    flex-end: alignés à la fin ;
+    center: alignés au centre ;
+    baseline: alignés sur la ligne de base (semblable à  flex-start).
+
+Répartissez les blocs sur plusieurs lignes avec align-content
+
+	stretch  (par défaut) : les éléments s'étirent pour occuper tout l'espace ;
+    flex-start  : les éléments sont placés au début ;
+    flex-end  : les éléments sont placés à la fin ;
+    center  : les éléments sont placés au centre ;
+    space-between  : les éléments sont séparés avec de l'espace entre eux ;
+    space-around  : idem, mais il y a aussi de l'espace au début et à la fin.
+
+Pour les grilles css :
+
+	display: grid; permet de former la grille
+	grid-template-columns: (px -> fr) 20px 20px 30px ; permet de creer 3 colonnes par lignes de 20px
+	grid-template-rows: 20px 30px: pareil mais pour 2 lignes
+	on peut indiquer la taille des elements avec width
+	gap: 10px; pour laisser de l'espace entre les elements
+
+	il vaut mieux utiliser l'unité fr pour les grid (pour column)
+
+	On aura besoin des propriétés suivantes pour déclarer nos éléments :
+
+    grid-column-start indique la ligne verticale de départ de l'élément ;
+    grid-column-end indique la ligne verticale d'arrivée de l'élément ;
+    grid-row-start indique la ligne horizontale de départ de l'élément ;
+    grid-row-end indique la ligne horizontale d'arrivée de l'élément.
+
+Attribut Display
+
+	on peut transformer des blocks en inline et inversement avec l'attribut display
+	les blocks sautent des lignes en debut et fin et les inlines sont cote à cote
+	du coup une fois transformés en blocks on peut les donner des hauteurs et lmargeurs par exemple
+	
+	On peut cacher des elements avec display: none;
+	Rendre les elements inline tout en les donnant des formes avec display: inline-block;
+
+Pour les tableaux, td, tr, th pour le nom de la colonne, caption pour le titre du tableau
+	on met en les cellules sur les colonnes avec le css border et la propriété border-collapse permet
+	de fusionner les cellules.
+
+	la propriété caption-side permet de choisir ou le titre du tableau est mis, par defaut (haut)
+
+	On fusionne les cellules avec colspan et rowspan
+
+Formulaires
+
+	On regroupe les elements d'un formulaire avec la balise <fieldset> et on peut donner un titre 
+	à l'ensemble de ces éléments avec <legend>
+
+	On peut placer le curseur automatiquement dans un champs avec l'attribut autofocus
+	et forcer la saisi du champ avec required
+
+
+*/
+
+* {
+    margin: 0;
+	
+}
+body
+{
+	background-color: #1F2039;
+}
+a
+{
+	color : black;
+	font-size: 1em;
+	font-family: "Manrope", sans-serif;
+	text-decoration: none;
+}
+em
+{
+	color: #A5B4FC;
+	font-style: normal;
+}
+
+h1 
+{
+	font-size: 3.5em;
+	color: #A5B4FC;
+	font-family: "Montserrat", sans-serif;
+}
+h2 
+{
+	color: #F9F8FF;
+}
+p
+{
+	font-size: 1.1em;
+	font-family: "Manrope", sans-serif;
+	color: #F9F8FF;
+}
+ul
+{
+	font-size: 1em;
+	font-family: "Manrope", sans-serif;
+	color: #F9F8FF;
+}
+
+.liens
+{
+	color: #242424;
+}
+.cta
+{
+	color: white;
+	font-family: "Manrope", sans-serif;
+	background: linear-gradient(#8E86B5,#ACAEED);
+	border-radius: 50px;
+	display: inline-block;
+	width: 270px;
+	margin: auto;
+	margin-top: 20px;
+	padding: 15px;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+.blanc:hover
+{
+	background: linear-gradient(#696484,#8788BA);
+	text-decoration: none;
+}
+.opaque:hover
+{
+	opacity: 0.5;
+}
+
+header,
+footer {
+  background-color: white;
+  padding: 20px 50px 20px 50px;
+}
+
+section
+{
+	padding: 80px;
+}
+
+footer,
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+nav a 
+{
+	margin-left: 30px;
+}
+
+@media screen and (max-width: 996px) {
+	header nav {
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: center;
+	}
+  
+	header nav img {
+	  margin-bottom: 20px;
+	}
+  
+	header,
+	footer {
+	  padding: 20px 20px;
+	}
+  
+	h1 {
+	  font-size: 2em;
+	}
+  
+	section {
+	  padding: 50px 20px 50px 20px;
+	}
+  
+	nav a {
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+  }
+  
